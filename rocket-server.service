@@ -5,11 +5,11 @@ After=network.target
 
 [Service]
 User=rocketchat
+Group=rocketchat
 Type=simple
 Restart=always
 StandardOutput=syslog
 SyslogIdentifier=RocketChat
-Group=rocketchat
 WorkingDirectory=/var/www/rocketchat/data/
 ExecStart="/var/www/rocketchat/data/start.sh"
 
